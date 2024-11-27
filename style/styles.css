@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.7rem;
+    color: var(--Stone600);
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+
+}
+
+h1{
+    color: var(--Stone900);
+}
+
+h2{
+    color: var(--Brown800);
+}
+
+h3{
+    color: var(--Rose800);
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+
+li{
+    margin-left: 1.7rem;
+    padding-left: 1rem;
+    
+}
+
+li::marker{
+    color: var(--Brown800);
+    font-weight: bold;
+}
+
+.preparation-section{
+    padding: 1.2rem;
+    background-color: var(--Rose50);
+    border-radius: .4rem;
+}
+
+.preparation-section li::marker{
+    color: var(--Rose800);
+}
+
+.instructions-section{
+    border-top: 2px solid var(--Stone150);
+    border-bottom: 2px solid var(--Stone150);
+    padding-block: 2rem;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: left;
+    border-bottom: 1px solid var(--Stone150);
+    padding: .5rem;
+}
+
+tr:last-child td,tr:last-child th {
+    border-bottom: none; 
+}
+
+th{
+    color: var(--Stone600);
+    padding-left: 2rem;
+}
+
+td{
+    color: var(--Brown800);
+    font-weight: bold;
+}
+
+  
+
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (width > 375px){
+    body{
+        background-color: var(--Rose50);
+    }
+    .recipie-wrapper{
+        max-width: 50rem;
+        background-color: var(--White);
+        padding: 2rem;
+        border-radius: .8rem;
+        margin-top: 2rem;
+    }
+    img{
+        border-radius: .7rem;
+    }
+}
