@@ -125,7 +125,7 @@ td{
     color: hsl(228, 45%, 44%); 
 }
 
-@media (width > 375px){
+@media (width > 425px){
     body{
         background-color: var(--Rose50);
     }
