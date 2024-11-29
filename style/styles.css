@@ -129,7 +129,7 @@ td{
 
 @media (width > 425px){
     body{
-        background-color: var(--Rose50);
+        background-color: var(--Stone100);
     }
     .recipie-wrapper{
         max-width: 50rem;
